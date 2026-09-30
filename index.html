@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz – Fundamentos de Segurança Cibernética</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section id="start" class="card">
+    <h1>QUIZ / SIMULADO</h1>
+    <h2>Fundamentos de Segurança Cibernética</h2>
+    <p>Banco de questões objetivas sobre os temas das aulas de Segurança Cibernética.</p>
+    <ul class="info">
+      <li id="bank"></li>
+      <li>Ao responder, sua escolha fica verde (acertou) ou vermelha (errou), e a alternativa correta é destacada.</li>
+      <li>Cada alternativa mostra a sua explicação.</li>
+    </ul>
+    <p>
+      <label>Questões por tentativa (aleatórias):
+        <select id="qty">
+          <option value="10">10</option>
+          <option value="20" selected>20</option>
+          <option value="30">30</option>
+          <option value="all">Todo o banco</option>
+        </select>
+      </label>
+    </p>
+    <button class="btn" id="go">INICIAR</button>
+  </section>
+
+  <section id="quiz" class="card hidden">
+    <div class="top"><span id="count"></span><span id="score"></span></div>
+    <div class="bar"><i id="prog"></i></div>
+    <h2 class="q" id="qtext"></h2>
+    <div id="opts"></div>
+    <div class="nav">
+      <button class="btn alt" id="prev">Anterior</button>
+      <button class="btn" id="next">Próxima</button>
+    </div>
+  </section>
+
+  <section id="end" class="card hidden" style="text-align:center">
+    <h1>Quiz concluído</h1>
+    <div class="big" id="pct"></div>
+    <div class="stats">
+      <div><strong id="hits"></strong>Acertos</div>
+      <div><strong id="miss"></strong>Erros</div>
+      <div><strong id="blank"></strong>Em branco</div>
+      <div><strong id="time"></strong>Tempo</div>
+    </div>
+    <p id="msg" style="color:var(--mute)"></p>
+    <button class="btn" id="again">Refazer quiz</button>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
