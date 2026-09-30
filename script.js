@@ -473,10 +473,10 @@ function reveal() {
     const tag = b.querySelector(".tag");
     if (d.items[k].ok) {
       b.classList.add("ok");
-      tag.textContent = k === i ? "✓ Resposta correta" : "✓ Esta era a resposta correta";
+      tag.textContent = k === i ? "Resposta correta" : "Alternativa correta";
     } else if (k === i) {
       b.classList.add("err");
-      tag.textContent = "✕ Não é bem isso";
+      tag.textContent = "Resposta errada!";
     } else {
       tag.remove();
     }
@@ -505,9 +505,9 @@ function finish() {
   $("blank").textContent = n - done;
   $("time").textContent = fmt(secs);
   $("msg").textContent = (n - done > 0 ? "Você deixou " + (n - done) + " questão(ões) sem resposta. " : "") + 
-    (pct >= 80 ? "Ótimo desempenho! Você domina bem o conteúdo." : 
-     pct >= 60 ? "Bom resultado. Revise as questões que errou e tente de novo." : 
-     "Vale revisar o material e refazer o quiz.");
+    (pct >= 80 ? "Ótimo desempenho!" : 
+     pct >= 50 ? "Bom resultado." : 
+     "Revise o conteúdo");
   show("end");
 }
 
