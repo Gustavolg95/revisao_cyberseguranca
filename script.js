@@ -337,12 +337,12 @@ const Q = [
     ["Uma ferramenta de criptografia de dados.", "Não tem relação com a definição."]
   ], 0],
   ["Um atacante pede informações pessoais a uma entidade em troca de um presente. Qual é a técnica?", [
-    ["Pretexting", "Envolve contar uma estória falsa para obter dados privilegiados."],
+    ["Pretexting", "Envolve contar uma história falsa para obter dados privilegiados."],
     ["Tailgating", "Consiste em seguir rapidamente uma pessoa autorizada para um local seguro."],
     ["Troca por troca (quid pro quo)", "Oferece algo em troca das informações."],
     ["Intimidação", "Usa ameaças para forçar uma ação."]
   ], 2],
-  ["Um atacante inventa uma estória falsa e finge precisar de dados financeiros para 'confirmar sua identidade'. Qual é a técnica?", [
+  ["Um atacante inventa uma história falsa e finge precisar de dados financeiros para 'confirmar sua identidade'. Qual é a técnica?", [
     ["Tailgating", "Ocorre no acesso físico, seguindo alguém autorizado."],
     ["Quid pro quo", "Envolve oferecer algo em troca, como um presente."],
     ["Escassez", "É a tática de fazer crer que a quantidade é limitada."],
